@@ -1,16 +1,15 @@
 <template>
   <section class="navbar">
-    <NuxtLink to="/">
+    <NuxtLink class="route" to="/">
       <div class="logo">
-        {{ name }}
+       Logo
       </div>
     </NuxtLink>
     <div class="menu">
-      <NuxtLink to="/">Projects</NuxtLink>
-      <NuxtLink to="/">Resume</NuxtLink>
-      <NuxtLink to="/">Contact</NuxtLink>
+      <NuxtLink class="route" to="/projectsView">Projects</NuxtLink>
+      <NuxtLink class="route" to="/resumeView">Resume</NuxtLink>
+      <NuxtLink class="route" to="/contactsView">Contact</NuxtLink>
     </div>
-    <button @click="test()">Submit</button>
   </section>
 </template>
 
@@ -23,9 +22,6 @@ export default {
   },
 
   methods: {
-      test: function (){
-          this.name = "Johnson"
-      }
   },
 };
 </script>
@@ -37,12 +33,24 @@ export default {
   width: 100%;
   align-items: center;
   justify-content: space-around;
+  margin: 2rem;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.route{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.logo{
+  font-size: 1.5rem;
 }
 </style>
