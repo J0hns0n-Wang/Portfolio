@@ -247,7 +247,7 @@ nav .icon-burger .line {
     padding: 10px 40px 10px 40px;
   } */
 
-  nav .links a {
+  nav .links .route {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 3rem;
