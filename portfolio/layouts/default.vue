@@ -1,12 +1,13 @@
 <template>
   <div>
       <NavBar/>
-      <Nuxt/>
+      <NuxtPage/>
       
   </div>
 </template>
 
 <script>
+
 export default {
 
 }
