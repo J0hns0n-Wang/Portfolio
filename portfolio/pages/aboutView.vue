@@ -1,12 +1,10 @@
 <template>
   <div>
-      <!-- <NavBar /> -->
-
+      <About/>
   </div>
 </template>
 
 <script>
-
 export default {
 
 }
