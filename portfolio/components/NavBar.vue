@@ -1,7 +1,7 @@
 <template>
    <nav class="container">
     <input id="nav-toggle" type="checkbox" />
-    <div class="logo">John<strong>son</strong>      Wang</div>
+    <NuxtLink class="logo" to="/">John<strong>son</strong>      Wang</NuxtLink>
     <ul class="links">
       <li class="list">
        <NuxtLink class="route" to="/projectsView">Projects</NuxtLink>
@@ -15,7 +15,7 @@
        <NuxtLink class="route" to="/aboutView">About</NuxtLink>
         <div class="home_underline"></div>
       </li>
-      <button>Contact</button>
+      <NuxtLink class="button" to="/contactsView">Contact</NuxtLink>
     </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
@@ -75,18 +75,18 @@ export default {
 
 
 
-* {
+/* * {
   margin: 0;
   padding: 0;
-  /* background-color: rgb(31, 31, 31); */
-}
-
-body {
   background-color: rgb(31, 31, 31);
-}
+} */
+
+/* body {
+  background-color: rgb(31, 31, 31);
+} */
 
 .container {
-  position: fixed;
+  /* position: relative; */
   top: 0px;
   left: 0px;
   right: 0px;
@@ -115,7 +115,9 @@ nav {
 }
 
 nav .logo {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
   z-index: 9;
 }
 
@@ -151,7 +153,7 @@ nav li {
   transform: translatex(0px);
 }
 
-button {
+.button {
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -163,9 +165,10 @@ button {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  text-decoration: none;
 }
 
-button::before {
+.button::before {
   content: " ";
   position: absolute;
   top: 0px;
@@ -177,7 +180,7 @@ button::before {
   transition: 0.8s cubic-bezier(0.97, 0.02, 0.44, 0.99);
 }
 
-button:hover::before {
+.button:hover::before {
   transform: skewX(40deg) translateX(100px);
   animation: btnshine 1s cubic-bezier(0.97, 0.02, 0.44, 0.99) infinite;
 }
