@@ -81,9 +81,9 @@ export default {
   background-color: rgb(31, 31, 31);
 } */
 
-/* body {
+body {
   background-color: rgb(31, 31, 31);
-} */
+}
 
 .container {
   /* position: relative; */
