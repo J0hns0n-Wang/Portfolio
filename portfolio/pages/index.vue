@@ -16,18 +16,18 @@
 
 export default {
 name:"home",
-mounted(){
-  this.vantaEffect = HALO({
-  el: this.$refs.haloRef,
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  backgroundColor: 0x131843,
-  // three: window.three
-})
-},
+// mounted(){
+//   this.vantaEffect = HALO({
+//   el: this.$refs.haloRef,
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.00,
+//   minWidth: 200.00,
+//   backgroundColor: 0x131843,
+//   // three: window.three
+// })
+// },
 data(){
     return{
 
@@ -36,6 +36,10 @@ data(){
 }
 </script>
 
-<style>
-
+<style scoped>
+.banner{
+    height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
 </style>
