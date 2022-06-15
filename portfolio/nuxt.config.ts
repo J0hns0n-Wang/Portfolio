@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    app:{
+ 
         head: {
             meta: [
               // <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,8 +24,11 @@ export default defineNuxtConfig({
             //   { children: ':root { color: red }', type: 'text/css' }
             // ]
           },
-
+          
+          // plugins:[
+          //   {src: "~/plugins/particles"}
+          // ]
         
-    },
+   
 
 })

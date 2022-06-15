@@ -5,14 +5,16 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
-  
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
     "gsap": "^3.10.4",
+    "particles.vue3": "^2.0.6",
     "three": "^0.141.0",
-    "vanta": "^0.5.22"
+    "tsparticles-engine": "^2.0.6",
+    "vanta": "^0.5.22",
+    "vue": "^3.2.37"
   }
 }
