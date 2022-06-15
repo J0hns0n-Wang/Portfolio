@@ -5,8 +5,14 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
+  
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.3"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "three": "^0.141.0",
+    "vanta": "^0.5.22"
   }
 }
