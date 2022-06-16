@@ -153,9 +153,9 @@ nav li {
   transition: 0.5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
 }
 
-.logo:hover > .home_underline {
+/* .logo:hover > .home_underline {
   transform: translatex(0px);
-}
+} */
 
 .list:hover > .home_underline {
   transform: translatex(0px);
