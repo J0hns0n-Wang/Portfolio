@@ -1,7 +1,8 @@
 <template>
    <nav class="container">
-    <input id="nav-toggle" type="checkbox" />
+    <!-- <input id="nav-toggle" type="checkbox" /> -->
     <NuxtLink class="logo" to="/">John<strong>son</strong>      Wang</NuxtLink>
+    <div class="home_underline"></div>
     <ul class="links">
       <li class="list">
        <NuxtLink class="route" to="/projectsView">Projects</NuxtLink>
@@ -88,10 +89,16 @@ export default {
   left: 0px;
   right: 0px;
   display: flex;
-  margin: 30px 160px ;
+  /* margin: 30px 160px ; */
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #03a090);
+  width: 100vw;
+  padding: 1.2rem 5rem;
 }
+/* aee5d8 */
+
+/* 03a090 */
 @media screen and (max-width: 1024px) {
   .container {
     position: fixed;
@@ -144,6 +151,10 @@ nav li {
   height: 2px;
   background-color: white;
   transition: 0.5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
+}
+
+.logo:hover > .home_underline {
+  transform: translatex(0px);
 }
 
 .list:hover > .home_underline {
