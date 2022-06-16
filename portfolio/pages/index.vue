@@ -31,7 +31,13 @@ data(){
 }
 </script>
 
-<style scoped>
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #009688; */
+}
 
 #banner {
     display: flex;
