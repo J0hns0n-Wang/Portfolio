@@ -4,8 +4,8 @@
             <h1>{{ name }}</h1>
             <p> {{ description }}</p>
             <div class="banner-btn">
-                <a href="#service"><span></span><b>Find out</b></a>
-                <a href="#features"><span></span><b>Read More</b></a>
+                <a href="#"><span></span><b>Find out</b></a>
+                <a href="#"><span></span><b>Read More</b></a>
             </div>
         </div>
     </section>
@@ -31,12 +31,17 @@ data(){
 }
 </script>
 
-<style scoped>
-
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #009688; */
+}
 #banner {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), 
     url("https://res.cloudinary.com/lupusawareness/image/upload/v1655390846/personal/cover_page_for_portfolio_yma0lv.jpg");
     background-size: cover;

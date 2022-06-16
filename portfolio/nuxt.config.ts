@@ -26,9 +26,6 @@ export default defineNuxtConfig({
     // ]
   },
   
-  // plugins:[
-  //   {src: "~/plugins/particles"}
-  // ]
 
 
  }
