@@ -1,45 +1,100 @@
 <template>
-  <section id="home">
-      <div id="banner" class="banner" ref="haloRef">
-          <h1>Johnson Wang</h1>
-          <p>High School Fullstack Web Developer</p>
-      </div>
+  <section id="banner">
+        <div class="banner-text">
+            <h1>{{ name }}</h1>
+            <p> {{ description }}</p>
+            <div class="banner-btn">
+                <a href="#service"><span></span><b>Find out</b></a>
+                <a href="#features"><span></span><b>Read More</b></a>
+            </div>
+        </div>
     </section>
+ 
 </template>
 
 <script>
 
-// import HALO from 'vanta/src/vanta.halo'
+
 // import gsap from'gsap'
-// import * as three from "three"
+
 
 
 export default {
 name:"home",
-// mounted(){
-//   this.vantaEffect = HALO({
-//   el: this.$refs.haloRef,
-//   mouseControls: true,
-//   touchControls: true,
-//   gyroControls: false,
-//   minHeight: 200.00,
-//   minWidth: 200.00,
-//   backgroundColor: 0x131843,
-//   // three: window.three
-// })
-// },
+
 data(){
     return{
-
+        name: "Johnson Wang",
+        description: "High School Fullstack Web Developer"
     }
 }
 }
 </script>
 
 <style scoped>
-.banner{
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), 
+    url("https://res.cloudinary.com/lupusawareness/image/upload/v1655390846/personal/cover_page_for_portfolio_yma0lv.jpg");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-  width: 100%;
-  overflow: hidden;
 }
+
+.banner-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.banner-text h1 {
+    font-size: 130px;
+    font-family: "Kaushan Script";
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.banner-btn {
+    margin: 76px auto;
+}
+
+.banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: 0.5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: #000;
+}
+
+
 </style>

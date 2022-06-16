@@ -81,12 +81,9 @@ export default {
   background-color: rgb(31, 31, 31);
 } */
 
-body {
-  background-color: rgb(31, 31, 31);
-}
 
 .container {
-  position: relative;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -111,13 +108,13 @@ body {
 nav {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  color: black;
+  color: white;
 }
 
 nav .logo {
   font-size: 2rem;
   text-decoration: none;
-  color: black;
+  color: white;
   z-index: 9;
 }
 
@@ -130,7 +127,7 @@ nav .links {
 }
 
 nav .links .route {
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
   font-weight: 400;
@@ -145,7 +142,7 @@ nav li {
   transform: translateX(-70px);
   width: auto;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: 0.5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
 }
 
@@ -207,7 +204,7 @@ nav .icon-burger {
 nav .icon-burger .line {
   width: 30px;
   height: 4px;
-  background-color: black;
+  background-color: white;
   margin: 5px;
   border-radius: 5px;
 }
@@ -254,7 +251,7 @@ nav .icon-burger .line {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 3rem;
-    color: black;
+    color: white;
     font-weight: 600;
   }
   nav .icon-burger {
