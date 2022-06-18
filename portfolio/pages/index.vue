@@ -51,7 +51,7 @@ data(){
 
 .banner-text {
     text-align: center;
-    color: #fff;
+    color: white;
     padding-top: 180px;
 }
 
