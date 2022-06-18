@@ -1,8 +1,8 @@
 <template>
   <section id="banner">
         <div class="banner-text">
-            <h1>{{ name }}</h1>
-            <p> {{ description }}</p>
+            <h1 class="name">{{ name }}</h1>
+            <p class="description"> {{ description }}</p>
             <div class="banner-btn">
                 <a href="#"><span></span><b>Find out</b></a>
                 <a href="#"><span></span><b>Read More</b></a>
@@ -15,13 +15,19 @@
 <script>
 
 
-// import gsap from'gsap'
+import gsap from'gsap'
 
 
 
 export default {
 name:"home",
-
+mounted(){
+    gsap
+    .timeline({ defaults: {duration: 1}})
+    .from(".name", { x: -60, opacity: 0, ease: "power2.in" })
+    .from(".description", { x: 60, opacity: 0, ease: "power2.in"})
+    .from(".banner-btn", {opacity: 0, ease: "power3.out"})
+},
 data(){
     return{
         name: "Johnson Wang",
@@ -52,7 +58,7 @@ data(){
 .banner-text {
     text-align: center;
     color: white;
-    padding-top: 180px;
+    padding-top: 250px;
 }
 
 .banner-text h1 {

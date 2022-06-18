@@ -4,6 +4,10 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
  app:{
   head: {
+    title: "Johnson Wang",
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
       // <meta name="viewport" content="width=device-width, initial-scale=1">
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -18,6 +22,14 @@ export default defineNuxtConfig({
       // <link rel="stylesheet" href="https://myawesome-lib.css">
       { rel: 'stylesheet', href: 'https://awesome-lib.css' }
     ],
+    components: true,
+    gsap: {
+      extraPlugins: {
+        scrollTo: true,
+        scrollTrigger: true,
+      },
+    },
+    
     // // please note that this is an area that is likely to change
     // style: [
     //   // <style type="text/css">:root { color: red }</style>
