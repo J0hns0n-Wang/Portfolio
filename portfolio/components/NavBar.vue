@@ -9,14 +9,14 @@
         <div class="home_underline"></div>
       </li>
       <li class="list">
-        <NuxtLink class="route" to="/resumeView">Resume</NuxtLink>
+        <NuxtLink class="route" to="/" target="_blank">Resume</NuxtLink>
         <div class="home_underline"></div>
       </li>
       <li class="list">
        <NuxtLink class="route" to="/aboutView">About</NuxtLink>
         <div class="home_underline"></div>
       </li>
-      <NuxtLink class="button" to="/contactsView">Contact</NuxtLink>
+      <NuxtLink class="button" to="mailto:johnsonwang529@gmail.com" >Contact</NuxtLink>
     </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
