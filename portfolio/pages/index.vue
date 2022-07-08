@@ -1,16 +1,21 @@
 <template>
-<div class="home">
-  <section id="banner">
-    <div class="banner-text">
-      <h1 class="name">{{ name }}</h1>
-      <p class="description">{{ description }}</p>
-      <div class="banner-btn">
-        <a href="#"><span></span><b>Find out</b></a>
-        <a href="#"><span></span><b>Read More</b></a>
+  <div class="home">
+    <section id="banner">
+      <div class="banner-text">
+        <h1 class="name">{{ name }}</h1>
+        <p class="description">{{ description }}</p>
+        <div class="banner-btn">
+          <a href="#"><span></span><b>Explore Projects!</b></a>
+          <a href="https://github.com/J0hns0n-Wang" target="_blank"><span></span><b>GitHub</b></a>
+        </div>
       </div>
+    </section>
+    <div class="content">
+      <section class="about"></section>
+      <section class="resume"></section>
+      <section class="project"></section>
     </div>
-  </section>
-  <!-- <section class="about">
+    <!-- <section class="about">
       <div class="about-container">
           <h1 class="about-header">Hello!</h1>
           <div class="about-content">
@@ -20,7 +25,7 @@
           </div>
       </div>
   </section> -->
-</div>
+  </div>
 </template>
 
 <script>

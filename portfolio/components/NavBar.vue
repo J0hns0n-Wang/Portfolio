@@ -1,7 +1,7 @@
 <template>
    <nav class="container">
     <!-- <input id="nav-toggle" type="checkbox" /> -->
-    <NuxtLink class="logo" to="/">John<strong>son</strong>      Wang</NuxtLink>
+    <NuxtLink class="logo" to="/">John<strong class="strong">son</strong>      Wang</NuxtLink>
     <div class="home_underline"></div>
     <ul class="links">
       <li class="list">
@@ -9,14 +9,14 @@
         <div class="home_underline"></div>
       </li>
       <li class="list">
-        <NuxtLink class="route" to="/" target="_blank">Resume</NuxtLink>
+        <NuxtLink class="route" to="/resumeView">Resume</NuxtLink>
         <div class="home_underline"></div>
       </li>
       <li class="list">
        <NuxtLink class="route" to="/aboutView">About</NuxtLink>
         <div class="home_underline"></div>
       </li>
-      <NuxtLink class="button" to="mailto:johnsonwang529@gmail.com" >Contact</NuxtLink>
+      <NuxtLink class="button" to="mailto:johnsonwang529@gmail.com">Contact</NuxtLink>
     </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
@@ -92,7 +92,7 @@ export default {
   /* margin: 30px 160px ; */
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), #03a090);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), #03a090); */
   width: 100vw;
   padding: 1.2rem 5rem;
 }
@@ -123,8 +123,12 @@ nav .logo {
   text-decoration: none;
   color: white;
   z-index: 9;
+  transition: all 0.7s ease;
 }
 
+/* .logo:hover .strong{
+  color: skyblue;
+} */
 nav .links {
   display: flex;
   gap: 60px;
@@ -134,7 +138,7 @@ nav .links {
 }
 
 nav .links .route {
-  color: white;
+  color:white;
   text-decoration: none;
   cursor: pointer;
   font-weight: 400;
@@ -156,6 +160,10 @@ nav li {
 /* .logo:hover > .home_underline {
   transform: translatex(0px);
 } */
+
+.logo:hover  .home_underline{
+  transform: translate(0px);
+}
 
 .list:hover > .home_underline {
   transform: translatex(0px);

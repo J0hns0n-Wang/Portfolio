@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div class="projects">
      <Projects/>
  </div>
 </template>
@@ -10,6 +10,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.projects{
+    background: #009688;
+}
 
 </style>

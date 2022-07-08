@@ -10,7 +10,10 @@ export default defineNuxtConfig({
     },
     meta: [
       // <meta name="viewport" content="width=device-width, initial-scale=1">
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' },
     ],
     // script: [
     //     // <script src="https://myawesome-lib.js"></script>
@@ -20,7 +23,8 @@ export default defineNuxtConfig({
     //   ],
     link: [
       // <link rel="stylesheet" href="https://myawesome-lib.css">
-      { rel: 'stylesheet', href: 'https://awesome-lib.css' }
+      { rel: 'stylesheet', href: 'https://awesome-lib.css' },
+      { rel: 'icon', type: 'image/x-icon', href: '/assets/icon.png' }
     ],
     components: true,
     gsap: {
